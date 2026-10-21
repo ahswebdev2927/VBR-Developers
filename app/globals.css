@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --color-brand-navy: #192A4D;
+    --color-brand-midnight: #0F1A30;
+    --color-brand-orange: #E3642B;
+    --color-brand-orange-hover: #CC5520;
+    --color-brand-orange-light: #FFF2EB;
+    --color-brand-green: #5B9E4B;
+    --color-brand-green-dark: #3F7A31;
+    --color-brand-green-light: #EEF7EB;
+    --color-brand-ivory: #FAF8F5;
+    --color-brand-cream: #F3EFE9;
+    --color-brand-slate: #202923;
+    --color-brand-muted: #64748B;
+    --color-brand-border: #E2E8F0;
+    --color-whatsapp: #25D366;
+  }
+}
+
+@theme {
+  --color-brand-navy: var(--color-brand-navy);
+  --color-brand-midnight: var(--color-brand-midnight);
+  --color-brand-orange: var(--color-brand-orange);
+  --color-brand-orange-hover: var(--color-brand-orange-hover);
+  --color-brand-orange-light: var(--color-brand-orange-light);
+  --color-brand-green: var(--color-brand-green);
+  --color-brand-green-dark: var(--color-brand-green-dark);
+  --color-brand-green-light: var(--color-brand-green-light);
+  --color-brand-ivory: var(--color-brand-ivory);
+  --color-brand-cream: var(--color-brand-cream);
+  --color-brand-slate: var(--color-brand-slate);
+  --color-brand-muted: var(--color-brand-muted);
+  --color-brand-border: var(--color-brand-border);
+  --color-whatsapp: var(--color-whatsapp);
+
+  --font-heading: var(--font-heading), "Plus Jakarta Sans", sans-serif;
+  --font-body: var(--font-body), "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-brand-slate);
+  background-color: var(--color-brand-ivory);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom UI utilities */
+.container-custom {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Glassmorphism effects */
+.glass-header {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dark {
+  background: rgba(15, 26, 48, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

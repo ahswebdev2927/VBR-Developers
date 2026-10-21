@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="pvSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#192A4D" />
+      <stop offset="100%" stop-color="#3B5998" />
+    </linearGradient>
+    <linearGradient id="pvGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B9E4B" />
+      <stop offset="100%" stop-color="#2D5E21" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#pvSky)" />
+  <path d="M0,320 Q200,280 400,310 T800,290 L800,500 L0,500 Z" fill="#204E26" />
+  <path d="M0,350 Q300,310 600,340 T800,330 L800,500 L0,500 Z" fill="url(#pvGreen)" />
+  <!-- Internal Blacktop Road -->
+  <polygon points="400,330 420,330 580,500 220,500" fill="#334155" />
+  <polygon points="398,340 402,340 404,360 396,360" fill="#FBBF24" />
+  <polygon points="395,380 405,380 408,410 392,410" fill="#FBBF24" />
+  <polygon points="390,430 410,430 415,480 385,480" fill="#FBBF24" />
+  <!-- Plot boundary marks -->
+  <rect x="120" y="380" width="120" height="80" rx="4" fill="#3F7A31" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 2" />
+  <rect x="560" y="380" width="120" height="80" rx="4" fill="#3F7A31" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 2" />
+  <!-- Avenue plantation -->
+  <circle cx="280" cy="430" r="24" fill="#1D4726" />
+  <circle cx="520" cy="430" r="24" fill="#1D4726" />
+  <!-- Project label plate -->
+  <rect x="40" y="40" width="320" height="90" rx="8" fill="#0F1A30" opacity="0.92" stroke="#E3642B" stroke-width="2" />
+  <text x="60" y="75" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="22">PRAKRUTI VANAM</text>
+  <text x="60" y="102" fill="#E3642B" font-family="'Inter', sans-serif" font-weight="bold" font-size="14">10.5 ACRES • SHARAJIPET, ALAIR (2018)</text>
+</svg>

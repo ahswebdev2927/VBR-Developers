@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="rscSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F1A30" />
+      <stop offset="100%" stop-color="#192A4D" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#rscSky)" />
+  <!-- Expansive 23 Acres Grid Layout -->
+  <polygon points="400,220 780,340 400,480 20,340" fill="#2E693B" stroke="#5B9E4B" stroke-width="2" />
+  <!-- Grid of Plots -->
+  <line x1="210" y1="280" x2="590" y2="410" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="305" y1="250" x2="495" y2="445" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="305" y1="410" x2="495" y2="280" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="210" y1="340" x2="590" y2="340" stroke="#FBBF24" stroke-width="4" />
+  <!-- Center Amenity Plot / Park -->
+  <rect x="360" y="310" width="80" height="60" rx="6" fill="#5B9E4B" stroke="#E3642B" stroke-width="2" />
+  <text x="400" y="345" fill="#FFFFFF" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="bold" font-size="11">PARK</text>
+  <!-- Verified LP Badge Plate -->
+  <rect x="40" y="40" width="370" height="90" rx="8" fill="#0F1A30" opacity="0.94" stroke="#C9A45C" stroke-width="2" />
+  <text x="60" y="75" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="22">ROYAL SMART CITY</text>
+  <text x="60" y="102" fill="#C9A45C" font-family="'Inter', sans-serif" font-weight="bold" font-size="14">23 ACRES • DTCP LP NO. 55/2017/H</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F1A30" />
+      <stop offset="60%" stop-color="#192A4D" />
+      <stop offset="100%" stop-color="#2D4675" />
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2E693B" />
+      <stop offset="100%" stop-color="#1D4726" />
+    </linearGradient>
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E3642B" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFB347" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="1200" height="800" fill="url(#skyGrad)" />
+
+  <!-- Morning Sunrise Glow -->
+  <circle cx="950" cy="240" r="180" fill="url(#sunGlow)" filter="blur(30px)" />
+  <circle cx="950" cy="240" r="90" fill="#FFF3E0" opacity="0.8" />
+
+  <!-- Rolling green hills in background -->
+  <path d="M0,520 Q300,430 600,480 T1200,450 L1200,800 L0,800 Z" fill="#24542F" opacity="0.7" />
+  <path d="M0,560 Q400,490 800,540 T1200,510 L1200,800 L0,800 Z" fill="url(#groundGrad)" />
+
+  <!-- Layout Central Blacktop Road Perspective -->
+  <polygon points="600,520 620,520 850,800 350,800" fill="url(#roadGrad)" />
+  
+  <!-- Road Yellow Dividing Dashes -->
+  <polygon points="608,530 612,530 614,560 606,560" fill="#FBBF24" />
+  <polygon points="606,580 614,580 617,620 603,620" fill="#FBBF24" />
+  <polygon points="603,645 617,645 621,700 599,700" fill="#FBBF24" />
+  <polygon points="598,725 622,725 627,790 593,790" fill="#FBBF24" />
+
+  <!-- Demarcated Plot Boundary Stones & Curbs -->
+  <!-- Left Side Plots -->
+  <polygon points="350,800 480,640 100,680 0,800" fill="#3B7D4B" opacity="0.9" />
+  <line x1="480" y1="640" x2="100" y2="680" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="8 6" opacity="0.7" />
+  <polygon points="480,640 540,560 250,580 100,680" fill="#48945B" opacity="0.85" />
+  <line x1="540" y1="560" x2="250" y2="580" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 4" opacity="0.7" />
+
+  <!-- Right Side Plots -->
+  <polygon points="850,800 720,640 1100,680 1200,800" fill="#3B7D4B" opacity="0.9" />
+  <line x1="720" y1="640" x2="1100" y2="680" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="8 6" opacity="0.7" />
+  <polygon points="720,640 660,560 950,580 1100,680" fill="#48945B" opacity="0.85" />
+  <line x1="660" y1="560" x2="950" y2="580" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 4" opacity="0.7" />
+
+  <!-- Avenue Trees lining the layout road -->
+  <!-- Left Avenue Trees -->
+  <circle cx="530" cy="545" r="16" fill="#1B4D24" />
+  <line x1="530" y1="545" x2="530" y2="565" stroke="#4A3728" stroke-width="3" />
+
+  <circle cx="465" cy="620" r="28" fill="#1E5A2A" />
+  <line x1="465" y1="620" x2="465" y2="655" stroke="#4A3728" stroke-width="4" />
+
+  <circle cx="340" cy="740" r="45" fill="#246B33" />
+  <line x1="340" y1="740" x2="340" y2="795" stroke="#4A3728" stroke-width="6" />
+
+  <!-- Right Avenue Trees -->
+  <circle cx="670" cy="545" r="16" fill="#1B4D24" />
+  <line x1="670" y1="545" x2="670" y2="565" stroke="#4A3728" stroke-width="3" />
+
+  <circle cx="735" cy="620" r="28" fill="#1E5A2A" />
+  <line x1="735" y1="620" x2="735" y2="655" stroke="#4A3728" stroke-width="4" />
+
+  <circle cx="860" cy="740" r="45" fill="#246B33" />
+  <line x1="860" y1="740" x2="860" y2="795" stroke="#4A3728" stroke-width="6" />
+
+  <!-- Modern Grand Entrance Arch Silhouette at horizon -->
+  <path d="M570,520 L570,470 L630,470 L630,520" stroke="#E3642B" stroke-width="4" fill="none" />
+  <rect x="560" y="465" width="80" height="8" fill="#E3642B" />
+</svg>
