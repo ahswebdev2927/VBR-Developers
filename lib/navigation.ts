@@ -7,8 +7,6 @@ export const navigationLinks: NavItem[] = [
   { title: "Home", href: "/" },
   { title: "About Us", href: "/about" },
   { title: "Our Projects", href: "/projects" },
-  { title: "Gallery", href: "/gallery" },
-  { title: "FAQ", href: "/faq" },
   { title: "Contact Us", href: "/contact" },
 ];
 
