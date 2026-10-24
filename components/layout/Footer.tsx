@@ -194,12 +194,12 @@ export default function Footer() {
           <p>
             &copy; {currentYear} {siteConfig.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5 sm:gap-6 font-medium">
             {legalLinks.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="hover:text-brand-orange transition-colors"
+                className="text-slate-300 hover:text-brand-orange hover:underline transition-colors"
               >
                 {item.title}
               </Link>
