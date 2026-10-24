@@ -16,6 +16,8 @@ export const footerQuickLinks: NavItem[] = [
   { title: "Completed Projects", href: "/projects" },
   { title: "Layout Gallery", href: "/gallery" },
   { title: "Frequently Asked Questions", href: "/faq" },
+  { title: "Privacy Policy", href: "/privacy" },
+  { title: "Terms & Conditions", href: "/terms" },
   { title: "Contact Our Team", href: "/contact" },
 ];
 
