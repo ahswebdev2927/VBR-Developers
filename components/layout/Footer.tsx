@@ -189,17 +189,17 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10 py-6 text-xs text-slate-400">
-        <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+      <div className="border-t border-white/10 py-6 text-xs text-slate-400 relative z-30">
+        <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left pr-0 sm:pr-24 lg:pr-28">
           <p>
             &copy; {currentYear} {siteConfig.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-5 sm:gap-6 font-medium">
+          <div className="flex items-center gap-5 sm:gap-6 font-medium relative z-30">
             {legalLinks.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-slate-300 hover:text-brand-orange hover:underline transition-colors"
+                className="text-slate-300 hover:text-brand-orange hover:underline transition-colors py-1 cursor-pointer"
               >
                 {item.title}
               </Link>

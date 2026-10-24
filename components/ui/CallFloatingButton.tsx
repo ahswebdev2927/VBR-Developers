@@ -10,10 +10,10 @@ export default function CallFloatingButton() {
   return (
     <aside
       aria-label="Direct telephone call"
-      className="fixed bottom-6 left-6 z-50 flex items-center gap-2 group"
+      className="fixed bottom-6 left-6 z-40 pointer-events-none flex items-center gap-2 group"
     >
       {/* Button Container with Radar / Ping Rings */}
-      <div className="relative flex items-center justify-center">
+      <div className="relative pointer-events-auto flex items-center justify-center">
         {/* Radar Ring 1 */}
         <span
           className="absolute inset-0 rounded-full bg-brand-orange opacity-75 animate-ping pointer-events-none"
