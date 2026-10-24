@@ -63,6 +63,14 @@ export const metadata: Metadata = {
     title: "VBR Developers | Residential Plotted Developments in Telangana",
     description: "Explore completed residential plotted layouts in Telangana.",
   },
+  icons: {
+    icon: [
+      { url: "/vbrlogo.png", type: "image/png" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
+    shortcut: "/vbrlogo.png",
+    apple: "/vbrlogo.png",
+  },
   robots: {
     index: true,
     follow: true,
@@ -77,7 +85,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${inter.variable} scroll-smooth`}>
       <head>
-        <link rel="icon" href="/images/branding/logo.png" type="image/png" />
+        <link rel="icon" href="/vbrlogo.png" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/vbrlogo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/vbrlogo.png" />
       </head>
       <body className="min-h-screen flex flex-col font-body antialiased bg-brand-ivory text-brand-slate selection:bg-brand-orange/20 selection:text-brand-navy">
         <Header />
