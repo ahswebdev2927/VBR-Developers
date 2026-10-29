@@ -1,0 +1,46 @@
+name: Deploy Website to Hostinger
+
+on:
+  push:
+    branches:
+      - main # Triggers when you push to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build and Export Static HTML
+        run: npm run build
+
+      - name: Deploy via LFTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_SERVER }}
+          FTP_USER: ${{ secrets.FTP_USERNAME }}
+          FTP_PASS: ${{ secrets.FTP_PASSWORD }}
+          TARGET_DIR: ${{ secrets.FTP_TARGET_DIR || './' }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          lftp -d -c "
+            set ftp:ssl-allow true;
+            set ssl:verify-certificate no;
+            set ftp:passive-mode true;
+            set ftp:prefer-epsv false;
+            set net:timeout 15;
+            set net:max-retries 3;
+            set net:reconnect-interval-base 3;
+            open -u \"$FTP_USER\",\"$FTP_PASS\" $FTP_HOST;
+            mirror -R --verbose --delete --parallel=1 ./out/ \"$TARGET_DIR\";
+            bye;
+          "
