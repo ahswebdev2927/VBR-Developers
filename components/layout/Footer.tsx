@@ -150,7 +150,7 @@ export default function Footer() {
           </div>
 
           {/* Office & Contact (Col 3) */}
-          <div className="lg:col-span-3 space-y-2">
+          <div className="lg:col-span-3 space-y-3">
             <h3 className="font-heading font-bold text-white text-sm uppercase tracking-wider border-b border-brand-orange/40 pb-2 inline-block">
               Office Location
             </h3>

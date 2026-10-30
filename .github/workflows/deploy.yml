@@ -41,6 +41,6 @@ jobs:
             set net:max-retries 3;
             set net:reconnect-interval-base 3;
             open -u \"$FTP_USER\",\"$FTP_PASS\" $FTP_HOST;
-            mirror -R --verbose --delete --parallel=1 ./out/ \"$TARGET_DIR\";
+            mirror -R --verbose --delete --parallel=100 ./out/ \"$TARGET_DIR\";
             bye;
           "
