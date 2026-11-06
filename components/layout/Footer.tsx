@@ -192,7 +192,7 @@ export default function Footer() {
       <div className="border-t border-white/10 py-6 text-xs text-slate-400 relative z-30">
         <div className="container-custom flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left pr-0 sm:pr-24 lg:pr-28">
           <p>
-            &copy; {currentYear} {siteConfig.name}. All rights reserved with us.
+            &copy; {currentYear} {siteConfig.name}. All rights reserved.
           </p>
           <div className="flex items-center gap-5 sm:gap-6 font-medium relative z-30">
             {legalLinks.map((item) => (
