@@ -34,12 +34,7 @@ const homeFaqItems: AccordionItem[] = [
     answer:
       "Royal Smart City carries the documented DTCP approval reference LP No. 55/2017/H across its 23-acre layout.",
   },
-  {
-    id: "faq-6",
-    question: "How do I contact VBR Developers or enquire about plot availability?",
-    answer:
-      "You can call our team directly at +91 9666777487, chat with us on WhatsApp, submit the website enquiry form, or visit our office at Nagole X Roads, Hyderabad between 9:00 AM and 8:00 PM.",
-  },
+
 ];
 
 export default function FAQSection() {
