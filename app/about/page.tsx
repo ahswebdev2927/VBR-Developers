@@ -4,13 +4,14 @@ import Link from "next/link";
 import { CheckCircle2, MapPin, Phone, Building2, ShieldCheck, ArrowRight } from "lucide-react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Button from "@/components/ui/Button";
+import FounderSection from "@/components/sections/FounderSection";
 import { siteConfig } from "@/lib/constants";
 import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  title: "About Us",
+  title: "About Us | Founder Ravi Kumar Bhethamalla",
   description:
-    "Learn about VBR Developers, our plotted residential developments across Telangana, and our dedication to clear records and transparent customer guidance.",
+    "Learn about VBR Developers, established in 2018 by Founder & Managing Director Ravi Kumar Bhethamalla with nearly two decades of real estate expertise across Telangana.",
 };
 
 export default function AboutPage() {
@@ -105,7 +106,12 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+      </div>
 
+      {/* Founder & Managing Director Leadership Section */}
+      <FounderSection />
+
+      <div className="container-custom pt-16">
         {/* Corporate Summary Strip */}
         <div className="bg-brand-cream/60 rounded-2xl p-8 border border-brand-border mb-16">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">

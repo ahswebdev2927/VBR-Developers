@@ -2,6 +2,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import FeaturedProjects from "@/components/sections/FeaturedProjects";
 import ProjectStatistics from "@/components/sections/ProjectStatistics";
 import AboutSection from "@/components/sections/AboutSection";
+import FounderSection from "@/components/sections/FounderSection";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import GallerySection from "@/components/sections/GallerySection";
 import FAQSection from "@/components/sections/FAQSection";
@@ -24,7 +25,10 @@ export default function Home() {
       {/* 4. About VBR Developers Overview */}
       <AboutSection />
 
-      {/* 5. Why Choose VBR Developers */}
+      {/* 5. Founder & Managing Director Profile */}
+      <FounderSection />
+
+      {/* 6. Why Choose VBR Developers */}
       <WhyChooseUs />
 
       {/* 6. Layout Showcase Gallery */}
